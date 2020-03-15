@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>MobileBypass Extension Options</title>
+  <style>
+    body: { padding: 10px; }
+  </style>
+</head>
+<body id="body">
+  <table style="width:100%; padding:10px; font-size:110%;">
+    <tr><td style="width:35%;">Login</td><td><input style="width:100%" type="text" id="login"></input></td></tr>
+    <tr><td style="width:35%;">Activation key</td><td><input style="width:100%" type="text" id="activation_key"></input></td></tr>
+    <tr><td style="width:35%;">Token index</td><td><input style="width:100%" type="text" id="token_index"></input></td></tr>
+  </table>
+  <center><button id="save">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="next">Next token</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="clear">Clear</button></center>
+  <br/><hr/><br/>
+  <table style="width:100%; padding:10px;  font-size:110%;">
+    <tr><td colspan="2" style="width:35%"><div>How to get my token index ?<br/>
+    <ol style="font-style:italic;font-size:80%;">
+        <li>Put your activation key above</li>
+        <li>Generate a new token with MobilePass</li>
+        <li>Put it below</li>
+        <li>Click on "Get my current token index" :)</li>
+    </ol>
+    </div></td></tr>
+    <tr><td style="width:35%">Current token</td><td><input style="width:100%" type="text" id="curr_token_index"></input></td></tr>
+  </table>
+  <center><button id="getmytoken">Get my current token index</button></center>
+ <br/><hr/><br/>
+  <table style="width:100%; padding:10px;  font-size:110%;">
+    <tr><td colspan="2" style="width:35%"><div>Need a token ?<br/></div></td></tr>
+  </table>
+  <center><button id="get_token">Get a token</button></center><br/>
+  <center><span id="gen_token" style="border:solid 1px #ffffff;font-style:bold;font-size:175%;color:#FFA901; padding:0px 1ex 0px 1ex;"></span></center>
+  <script src="../js/asmcrypto.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/options.js"></script>
+</body>
+</html>
